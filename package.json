@@ -1,0 +1,29 @@
+{
+  "name": "testdocker",
+  "version": "1.0.0",
+  "description": "This is docker setup to run the server over container",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIPAKK2310/docker_dev.git"
+  },
+  "keywords": [
+    "Docker",
+    "server",
+    "container",
+    "image"
+  ],
+  "author": "Dipak Khare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DIPAKK2310/docker_dev/issues"
+  },
+  "homepage": "https://github.com/DIPAKK2310/docker_dev#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
