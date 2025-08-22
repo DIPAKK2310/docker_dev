@@ -3,8 +3,9 @@ const app = express();
 const path = require("path");
 const MongoClient = require("mongodb").MongoClient;
 
-const PORT = 4004;
+const PORT = 5000;
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
 app.use(express.static("public"));
 
 const MONGO_URL = "mongodb://admin:qwert@localhost:27017";
