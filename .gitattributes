@@ -1,0 +1,3 @@
+# Force GitHub Linguist to detect YAML files
+*.yaml linguist-language=YAML
+*.yml  linguist-language=YAML
