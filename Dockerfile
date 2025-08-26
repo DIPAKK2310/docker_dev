@@ -1,11 +1,16 @@
 FROM node
-ENV MONGO_DB_USERNAME=admin \
-    MONGO_DB_PASSWORD=qwerty
 
 RUN mkdir -p docker_dev
 WORKDIR /docker_dev 
 
-COPY . /docker_dev
+# Copy only package.json and package-lock.json first (for caching)
+COPY package*.json ./
+
+#Install dependencies inside the container
+RUN npm install 
+
+#Copy rest of app
+COPY . .
 
 
 
